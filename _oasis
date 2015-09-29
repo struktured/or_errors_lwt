@@ -9,9 +9,10 @@ BuildTools:  ocamlbuild
 Plugins: META (0.4), DevFiles (0.4)
 
 Library "or_errors"
+  Pack: true
   Build:              true
   Path:               src
-  Modules:            Monad, Result, Error, Or_error
+  Modules:            Monad, Result, Error, Or_error, Std
   BuildDepends:       
 
 AlphaFeatures : ocamlbuild_more_args
