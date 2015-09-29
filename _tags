@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: ee8bfab85affa854e28c42009c317e93)
+# DO NOT EDIT (digest: 50f957396453d133907c34efe5428317)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -20,5 +20,6 @@ true: annot, bin_annot
 "src/result.cmx": for-pack(Or_errors)
 "src/error.cmx": for-pack(Or_errors)
 "src/or_error.cmx": for-pack(Or_errors)
+"src/error_converters.cmx": for-pack(Or_errors)
 "src/std.cmx": for-pack(Or_errors)
 # OASIS_STOP

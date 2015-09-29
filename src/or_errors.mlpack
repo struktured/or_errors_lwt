@@ -1,8 +1,9 @@
 # OASIS_START
-# DO NOT EDIT (digest: 6dbd7bfcafb53820e0e9c1dd8be94db9)
+# DO NOT EDIT (digest: c6769d28936302cbe64adde71ef18f8e)
 Monad
 Result
 Error
 Or_error
+Error_converters
 Std
 # OASIS_STOP

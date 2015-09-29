@@ -12,7 +12,7 @@ Library "or_errors"
   Pack: true
   Build:              true
   Path:               src
-  Modules:            Monad, Result, Error, Or_error, Std
-  BuildDepends:       
+  Modules:            Monad, Result, Error, Or_error, Error_converters, Std
+  BuildDepends:
 
 AlphaFeatures : ocamlbuild_more_args
