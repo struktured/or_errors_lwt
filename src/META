@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: f1ce5e458f11e3d5571c10b9d6415c5b)
+version = "0.1"
+description = "Ocaml Monad, Error, Result, And Or_error Signatures"
+archive(byte) = "or_errors.cma"
+archive(byte, plugin) = "or_errors.cma"
+archive(native) = "or_errors.cmxa"
+archive(native, plugin) = "or_errors.cmxs"
+exists_if = "or_errors.cma"
+# OASIS_STOP
+

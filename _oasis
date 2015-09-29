@@ -1,0 +1,17 @@
+OASISFormat: 0.4
+Name:        or_errors
+Version:     0.1
+License:     MIT
+LicenseFile: LICENSE.txt
+Authors:     Carmelo Piccione
+Synopsis:    Ocaml Monad, Error, Result, And Or_error Signatures
+BuildTools:  ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Library "or_errors"
+  Build:              true
+  Path:               src
+  Modules:            Monad, Result, Error, Or_error
+  BuildDepends:       
+
+AlphaFeatures : ocamlbuild_more_args
