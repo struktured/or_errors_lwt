@@ -1,2 +1,6 @@
 S src/**
 B _build/**
+PKG or_errors
+PKG containers
+PKG ppx_deriving
+PKG ppx_deriving.show
