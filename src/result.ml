@@ -18,7 +18,7 @@ end *)
 
 open Or_errors.Std
  
-module Impl : RESULT with type ('ok, 'err) t := ('ok, 'err) CCError.t = struct
+module Impl : RESULT with type ('ok, 'err) t = ('ok, 'err) CCError.t = struct
 module R = CCError
 module Opt = CCOpt
 type ('ok, 'err) t = ('ok, 'err) R.t

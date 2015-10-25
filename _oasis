@@ -12,7 +12,7 @@ Library "or_errors_containers"
   Pack: true
   Build:              true
   Path:               src
-  Modules:            Result, Error
+  Modules:            Result, Error, Or_error
   BuildDepends:       containers, ppx_deriving, ppx_deriving.show, or_errors
 
 AlphaFeatures : ocamlbuild_more_args
