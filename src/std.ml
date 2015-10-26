@@ -1,5 +1,3 @@
-module type MONAD = Monad.S
-module type ERROR = Error.S
-module type RESULT = Result.S
-module type OR_ERROR = Or_error.S
-module type ERROR_CONVERTER = Error_converters.S
+module Result = Result
+module Make_error = Error.Make
+module Make_or_error = Or_error.Make
