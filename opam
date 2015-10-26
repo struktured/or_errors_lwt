@@ -3,9 +3,9 @@ name: "or_errors"
 version: "dev"
 author : "Carmelo Piccione carmelo.piccione+or_errors@gmail.com"
 maintainer: "carmelo.piccione+prob_cache@gmail.com"
-homepage: "https://github.com/struktured/ocaml-prob-cache"
-dev-repo: "git://github.com/struktured/ocaml-prob-cache.git#master"
-bug-reports: "https://github.com/struktured/ocaml-prob-cache/issues"
+homepage: "https://github.com/struktured/or_errors_containers"
+dev-repo: "git://github.com/struktured/or_errors_containers.git#master"
+bug-reports: "https://github.com/struktured/or_errors_containers/issues"
 
 build: [
   ["./configure"]
