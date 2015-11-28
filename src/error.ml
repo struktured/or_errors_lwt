@@ -2,9 +2,18 @@ open Or_errors.Std
 
 module type S = ERROR
 
-module Make(T:sig type t [@@deriving show] end) : ERROR = 
+module Impl = 
   struct
-    include T
-    let to_string_hum t = show t
-    let to_string_mach t = show t
+    type t = exn
+    let to_string_hum t = Printexc.to_string t
+    let to_string_mach t = to_string_hum t
 end
+
+module Signature : S =
+struct
+module M = Impl
+include M
+end
+
+include Impl
+
