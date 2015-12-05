@@ -20,6 +20,19 @@ module Make(Result:RESULT) = struct
   let map t ~f = map f t
 end
 
+module type S = 
+sig
+ include module type of Lwt
+ include OR_ERROR with type 'a t := 'a t
+end
+
+(**
+module type S = 
+sig
+module Result : RESULT
+include module type of Make(Result) with module Result := Result
+end **)
+
 module Signature(Result:RESULT) : OR_ERROR = 
 struct
   include Make(Result)

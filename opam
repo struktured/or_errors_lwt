@@ -22,5 +22,5 @@ remove: [
 ]
 
 depends: [
-  "ocamlfind" "lwt" "lwt.preemptive"
+  "ocamlfind" "lwt" "lwt.preemptive" "lwt.unix"
 ]
