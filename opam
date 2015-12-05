@@ -1,11 +1,11 @@
 opam-version: "1.2"
-name: "or_errors_containers"
+name: "or_errors_lwt"
 version: "dev"
 author : "Carmelo Piccione carmelo.piccione+or_errors@gmail.com"
 maintainer: "carmelo.piccione+or_errors@gmail.com"
-homepage: "https://github.com/struktured/or_errors_containers"
-dev-repo: "git://github.com/struktured/or_errors_containers.git#master"
-bug-reports: "https://github.com/struktured/or_errors_containers/issues"
+homepage: "https://github.com/struktured/or_errors_lwt"
+dev-repo: "git://github.com/struktured/or_errors_lwt.git#master"
+bug-reports: "https://github.com/struktured/or_errors_lwt/issues"
 
 build: [
   ["./configure"]
@@ -18,9 +18,9 @@ install: [
 ]
 
 remove: [
- ["ocamlfind" "remove" "or_errors_containers"]
+ ["ocamlfind" "remove" "or_errors_lwt"]
 ]
 
 depends: [
-  "ocamlfind"
+  "ocamlfind" "lwt" "lwt.preemptive"
 ]
