@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 593f9c5eb3e76e83fa0f898c23e3fdea)
+# DO NOT EDIT (digest: 8a2bde957b67f96c93ef0bda8a50dfea)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -14,14 +14,17 @@ true: annot, bin_annot
 ".git": not_hygienic
 "_darcs": -traverse
 "_darcs": not_hygienic
-# Library or_errors_containers
-"src/or_errors_containers.cmxs": use_or_errors_containers
-"src/result.cmx": for-pack(Or_errors_containers)
-"src/error.cmx": for-pack(Or_errors_containers)
-"src/or_error.cmx": for-pack(Or_errors_containers)
-"src/std.cmx": for-pack(Or_errors_containers)
-<src/*.ml{,i,y}>: pkg_containers
+# Library or_errors_lwt
+"src/or_errors_lwt.cmxs": use_or_errors_lwt
+"src/result.cmx": for-pack(Or_errors_lwt)
+"src/error.cmx": for-pack(Or_errors_lwt)
+"src/or_error.cmx": for-pack(Or_errors_lwt)
+"src/std.cmx": for-pack(Or_errors_lwt)
+<src/*.ml{,i,y}>: pkg_lwt
+<src/*.ml{,i,y}>: pkg_lwt.preemptive
+<src/*.ml{,i,y}>: pkg_lwt.unix
 <src/*.ml{,i,y}>: pkg_or_errors
 <src/*.ml{,i,y}>: pkg_ppx_deriving
 <src/*.ml{,i,y}>: pkg_ppx_deriving.show
+<src/*.ml{,i,y}>: pkg_threads
 # OASIS_STOP

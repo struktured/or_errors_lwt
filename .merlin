@@ -1,6 +1,8 @@
 S src/**
 B _build/**
 PKG or_errors
-PKG containers
+PKG lwt
+PKG lwt.preemptive
+PKG lwt.unix
 PKG ppx_deriving
 PKG ppx_deriving.show

@@ -1,5 +1,5 @@
 OASISFormat: 0.4
-Name:        or_errors_containers
+Name:        or_errors_lwt
 Version:     0.1
 License:     MIT
 LicenseFile: LICENSE.txt
@@ -8,11 +8,11 @@ Synopsis:    Ocaml Monad, Error, Result, And Or_error Signatures
 BuildTools:  ocamlbuild
 Plugins: META (0.4), DevFiles (0.4)
 
-Library "or_errors_containers"
+Library "or_errors_lwt"
   Pack: true
   Build:              true
   Path:               src
   Modules:            Result, Error, Or_error, Std
-  BuildDepends:       containers, ppx_deriving, ppx_deriving.show, or_errors
+  BuildDepends:       threads, lwt, lwt.preemptive, lwt.unix, ppx_deriving, ppx_deriving.show, or_errors
 
 AlphaFeatures : ocamlbuild_more_args
