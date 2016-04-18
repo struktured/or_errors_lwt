@@ -22,5 +22,5 @@ remove: [
 ]
 
 depends: [
-  "or_errors" "ocamlfind" "lwt" "lwt.preemptive" "lwt.unix"
+  "ocamlfind" "or_errors" "lwt" "lwt.preemptive" "lwt.unix"
 ]
