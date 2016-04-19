@@ -9,7 +9,6 @@ bug-reports: "https://github.com/struktured/or_errors_lwt/issues"
 
 build: [
   ["./configure"]
-  [make "clean"]
   [make "-j2"]
 ]
 
