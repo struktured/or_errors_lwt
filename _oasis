@@ -14,7 +14,7 @@ Library "or_errors_lwt"
   Build:              true
   CompiledObject:     native
   Path:               src
-  Modules:            Result, Error, Or_error, Std
+  Modules:            Lwt_result, Lwt_error, Lwt_or_error
   BuildDepends:       threads, lwt, lwt.preemptive, lwt.unix, ppx_deriving, ppx_deriving.show, or_errors
 
 AlphaFeatures : ocamlbuild_more_args

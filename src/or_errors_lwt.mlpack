@@ -1,7 +1,6 @@
 # OASIS_START
-# DO NOT EDIT (digest: 8968523127604e0be2e1ee4da72cfe5e)
-Result
-Error
-Or_error
-Std
+# DO NOT EDIT (digest: 7aaca57e2f8e8021a1378241e633c988)
+Lwt_result
+Lwt_error
+Lwt_or_error
 # OASIS_STOP
