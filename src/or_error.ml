@@ -19,6 +19,11 @@ module Make(Result:RESULT) = struct
       (fun ok -> Lwt.return ok))
   let both a b = join @@ Lwt.map (fun a -> Lwt.map (fun b -> (a,b)) b) a
   let map t ~f = map f t
+  let show a_f t =
+    Format.flush_str_formatter() |>
+    fun _ -> map ~f:(a_f Format.str_formatter) t
+    |> map ~f:Format.flush_str_formatter
+  let pp a_f f t = show a_f t |> map ~f:(fun s -> Format.fprintf f "%s" s)
 end
 
 module type S =
