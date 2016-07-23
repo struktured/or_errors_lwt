@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 6433eb2f103f8fb23d123d1afa5aed94)
+# DO NOT EDIT (digest: 239472ccfe2f8ee69ce1990803f16731)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -16,9 +16,6 @@ true: annot, bin_annot
 "_darcs": not_hygienic
 # Library or_errors_lwt
 "src/or_errors_lwt.cmxs": use_or_errors_lwt
-"src/lwt_result.cmx": for-pack(Or_errors_lwt)
-"src/lwt_error.cmx": for-pack(Or_errors_lwt)
-"src/lwt_or_error.cmx": for-pack(Or_errors_lwt)
 <src/*.ml{,i,y}>: pkg_lwt
 <src/*.ml{,i,y}>: pkg_lwt.preemptive
 <src/*.ml{,i,y}>: pkg_lwt.unix
